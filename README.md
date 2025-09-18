@@ -2,4 +2,5 @@ Makes it so that whenever you use a Wheel of Fortune, it plays audio from raxdfl
 Let's go gambling!
 
 (There's a slight delay in the audio on speeds below 4.)
-(Feel free to rewrite this mod with credit.)
+(Feel free to rewrite this mod, no credit needed.)
+
