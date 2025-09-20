@@ -4,7 +4,7 @@
 --- PREFIX: gamblecore
 --- MOD_AUTHOR: [fridaykitty]
 --- MOD_DESCRIPTION: Does some funny stuff to the Wheel of Fortune. Let's go gambling! Works best on Speed 4.
---- VERSION: 1.0.0
+--- VERSION: 1.0.1
 
 --[[
 	Feel free to rewrite this mod, no credit needed.
