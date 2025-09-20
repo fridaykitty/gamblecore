@@ -7,8 +7,7 @@
 --- VERSION: 1.0.0
 
 --[[
-	Feel free to rewrite this mod.
-	Please give some credit if you do.
+	Feel free to rewrite this mod, no credit needed.
 ]]--
 
 
@@ -46,13 +45,14 @@ SMODS.Consumable:take_ownership('wheel_of_fortune',{
             local eligible_card = pseudorandom_element(editionless_jokers, 'gamblecore_wheel_of_fortune')
             local edition = poll_edition('gamblecore_wheel_of_fortune', nil, true, true,
                 { 'e_polychrome', 'e_holo', 'e_foil' })
-            eligible_card:set_edition(edition, true)
-            check_for_unlock({ type = 'have_edition' })
-			G.E_MANAGER:add_event(Event({
+            G.E_MANAGER:add_event(Event({
                 trigger = 'after',
                 delay = 0.4*G.SETTINGS.GAMESPEED,
 				func = function()
+					eligible_card:set_edition(edition, true)
+					check_for_unlock({ type = 'have_edition' })
 					play_sound('gamblecore_gamble3')
+					return true
 				end
 			}))
         else
